@@ -1,0 +1,20 @@
+<div class='container'>
+<div class='row'>&nbsp;</div>
+<table class='table table-striped'>
+    <thead>
+        <tr>
+        <th>Avenger</th>
+        <th >Actor</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let avenger of avengers">
+    <td >
+        <a [title]="avenger.name" [routerLink]="['/avengers', avenger.name]">
+        {{ avenger.name }}
+        </a>
+    </td>
+    <td  contenteditable="true">{{avenger.actor}}</td>
+</tr>
+</table>
+</div>
